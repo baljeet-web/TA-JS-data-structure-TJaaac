@@ -11,10 +11,10 @@ let arr2 = arr;
 
 Answer the following with reason after going through the above code:
 
-- `[10] === [10]`
+- `[10] === [10]`false because this is an array and the object can be different with same value and different reference 
 - What is the value of obj? // answer
-- `obj == newObj`
-- `obj === newObj`
+- `obj == newObj`//`Arya`
+- `obj === newObj`//false
 - `user === newObj`
 - `user == newObj`
 - `user == obj`
@@ -33,8 +33,8 @@ function personDetails(person) {
 }
 var person1 = { name: 'Alex', age: 30 };
 var person2 = personDetails(person1);
-console.log(person1);
-console.log(person2);
+console.log(person1);//{ name: 'Alex', age: 30 }
+console.log(person2);//{ name: 'Alex', age: 30 }
 ```
 
 3. What will be the output of the below code:
