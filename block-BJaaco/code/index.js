@@ -3,15 +3,68 @@ let numbers = [6, 8, 10, 12, 43, 56, 98];
 let userIds = [1230, 234, 1278, 984, 763, 900];
 
 // 1. Add all the values of numbers and userIds array into the new newly created array named `collection`
+ let sumNumbers = 0;
+ for (let i=0; i<numbers.length; i++){
+   sumNumbers = sumNumbers + numbers[i]
+ }
+ console.log(sumNumbers);
+
+ let sumUserIds = 0;
+ for (let userId of userIds){
+   sumUserIds = sumUserIds + userId;
+ } 
+ console.log(sumUserIds);
+
+ let collection = [sumNumbers + sumUserIds];
+ console.log(collection);
+
 
 // 2. Add all the even numbers from both arrays numbers and userIds into a newly created array named `evenCollection`
 
+let sumEvenNumbers = 0;
+for (let number of numbers){
+  if (number % 2 == 0){
+    sumEvenNumbers += number
+  }
+}
+
+let sumEvenUserIds = 0;
+for (let userId of userIds){
+  if (userId % 2 == 0){
+    sumEvenUserIds += userId;
+  }
+}
+
+let evenCollection = [sumEvenNumbers + sumEvenUserIds];
+console.log(evenCollection);
+
+
 // 3. Add all the odd numbers from both arrays numbers and userIds into a newly created array named `oddCollection`
+
+
+
+let sumOddNumbers = 0;
+for (let number of numbers){
+  if (number % 2 !== 0){
+    sumOddNumbers += number
+  }
+}
+
+let sumOddUserIds = 0;
+for (let userId of userIds){
+  if (userId % 2 !== 0){
+    sumOddUserIds += userId;
+  }
+}
+
+let oddCollection = [sumOddNumbers + sumOddUserIds];
+console.log(oddCollection);
+
 
 /*
   @param means parameter
 
- 4. Write a function named times which accets two parameter and return an array. 
+ 4. Write a function named times which accepts two parameter and return an array. 
 
   @param times (number)
   @param character (string)
@@ -24,9 +77,15 @@ let userIds = [1230, 234, 1278, 984, 763, 900];
     times(5); // ['test', 'test', 'test', 'test', 'test']
 */
 
-function times() {
-  // Your code
+let result = [];
+function times(times, word) {
+  
+  for(let i = 0; i < times; i++){
+    result[i] = word;
+    console.log(result[i]);
+  }
 }
+times(5 , `c`);
 
 // Uncomment the code below and test the output
 
