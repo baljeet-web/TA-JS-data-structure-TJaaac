@@ -1,9 +1,9 @@
 ```js
 let user = {
-  name: 'Arya',
-  sibling: ['Robb', 'Ryan', 'John'],
+  name: "Arya",
+  sibling: ["Robb", "Ryan", "John"],
 };
-let allBrothers = ['Robb', 'Ryan', 'John'];
+let allBrothers = ["Robb", "Ryan", "John"];
 let brothersCopy = user.sibling;
 let usename = user.name;
 let newUser = user;
@@ -18,12 +18,12 @@ let newUser = user;
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
+- `user == newUser;` // yes, because the values inside the object are equal
+- `user === newUser;`//true, because the name of the objects are different
+- `user.name === newUser.name;`//true
+- `user.name == newUser.name;`//ys
+- `user.sibling == newUser.sibling;`yes
+- `user.sibling === newUser.sibling;`//true
 - `user.sibling == allBrothers;`
 - `user.sibling === allBrothers;`
 - `brothersCopy === allBrothers;`
