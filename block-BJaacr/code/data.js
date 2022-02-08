@@ -1,5 +1,6 @@
 const got = {
-  houses: [
+  houses: 
+  [
     {
       name: "Starks",
       people: [
